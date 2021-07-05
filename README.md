@@ -5,10 +5,6 @@
 - Step 2: Download latest Geth & Tools release for your Operating System and unzip .exe file into step 1 directory
 - Step 3: 
 
-### - Explain the configuration of the network, such as it's blocktime, chain ID, account passwords, ports, etc.
-
-### - Explain how to connect MyCrypto to your network and demonstrate (via screenshots and steps) and send a transaction.
-
 ## Start Node1
 * Start the first node by opening a new terminal and running the following command:
 
@@ -105,9 +101,14 @@ Comma separated enode URLs for P2P discovery bootstrap
 - --ipcdisable
 Disable the IPC-RPC server
 
-### - Explain the configuration of the network
-* We used 180 seconds between each block
-* chainID 127
-* Ports 30303 and 30304
+### Network Confirmation Explained
+* Block time is 180 seconds
+* chainID used is 127
+* Node1 listens on TCP port 30303 and Node2 listens on port TCP 30304
 
-### - Explain how to connect MyCrypto to your network and demonstrate (via screenshots and steps) and send a transaction.
+### How to connect MyCrypto to your network and demonstrate (via screenshots and steps) and send a transaction.
+- Step 1: In MyCrypto click in Change Network
+- Step 2: Then click on + Add Custom Node
+- Step 3: Add Node Name
+- Step 4: Select Custom in Network Dropdown
+- Step 5: Define Network Name, Currency ETH, Chain ID 127, and URL http://127.0.0.1:8545
