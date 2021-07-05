@@ -18,9 +18,21 @@
 
 *  Substitute the "SEALER_ONE_ADDRESS" with the the public address of the first node that was created in the previous session (do **not** include the leading `0x`).
 
+* Example:
+
   ```sh
   ./geth --datadir node1 --unlock "1E9Fc469FfE285228107CA63A98d7869A93BF189" --mine --miner.threads 1
   ```
+
+* **Important:** Type your password and hit enter - _even if you don't see a prompt!_
+
+* Copy the resulting enode address from the terminal:
+
+
+   <img src="Images/enode-address.png" width = 600>
+
+---
+
 
 ## Start Node2
 
