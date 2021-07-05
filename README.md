@@ -1,37 +1,58 @@
+# Blockchain Building Blocks Homework
 
+### Enviroment setup
+- Step 1: Make dir for new blockchain (e.g. *mkdir blockchain*)
+- Step 2: Download latest Geth & Tools release for your Operating System and unzip .exe file into step 1 directory
+- Step 3: 
 
-## Intructions to start Node1
-./geth --datadir node1 --unlock "1E9Fc469FfE285228107CA63A98d7869A93BF189" --mine --miner.threads 1
+### - Explain the configuration of the network, such as it's blocktime, chain ID, account passwords, ports, etc.
 
-## Intructions to start Node2
-./geth.exe --datadir node2 --unlock "B1F8B855dD47239Ef8eC38304753E9Bc75DB2212" --port 30304 --http --bootnodes "enode://f018ba3233571c075037548d5d2946b47f31dff2f6173acf172e1312c914bd572c0c2dcbc21ce83dc413a4e7721d9342592256804b9b9656c0343f2b41061a6a@127.0.0.1:30303"  --ipcdisable --allow-insecure-unlock --mine --miner.threads 1
+### - Explain how to connect MyCrypto to your network and demonstrate (via screenshots and steps) and send a transaction.
 
-## Data directory for the databases and keystore
---datadir value
+## Start Node1
+* Start the first node by opening a new terminal and running the following command:
+  ```sh
+  ./geth --datadir node1 --unlock "1E9Fc469FfE285228107CA63A98d7869A93BF189" --mine --miner.threads 1
+  ```
+## Start Node2
+Commands differ based on OS; choose your system below.
 
-## Comma separated list of accounts to unlock
---unlock value
+<details><summary>Windows</summary>
 
-## Enable mining
---mine
+* Start node two by opening a second new terminal and running the following command: 
+  ```sh
+  ./geth --datadir node2 --unlock "B1F8B855dD47239Ef8eC38304753E9Bc75DB2212" --port 30304 --http --bootnodes "enode://f018ba3233571c075037548d5d2946b47f31dff2f6173acf172e1312c914bd572c0c2dcbc21ce83dc413a4e7721d9342592256804b9b9656c0343f2b41061a6a@127.0.0.1:30303"  --ipcdisable --allow-insecure-unlock --mine --miner.threads 1
+```
+* **Important**: Type your password and hit enter - _even if you don't see a prompt!_
 
-## Number of CPU threads to use for mining (default: 0)
---miner.threads value
+* The chain should be up and running after you start the second node.
 
-## Network listening port (default: 30303)
---port value
+</details>
 
-## Enable the HTTP-RPC server (deprecated and will be removed June 2021, use --http)
---rpc
+## Geth Flags Used
+- --datadir ***value***
+Data directory for the databases and keystore
 
-## Enable the HTTP-RPC server
---http
+- --unlock ***value***
+Comma separated list of accounts to unlock
 
-## Comma separated enode URLs for P2P discovery bootstrap
---bootnodes value
+- --mine
+Enable mining
 
-## Disable the IPC-RPC server
---ipcdisable
+- --miner.threads ***value***
+Number of CPU threads to use for mining (default: 0)
 
-## Allow insecure account unlocking when account-related RPCs are exposed by http
---allow-insecure-unlock
+- --port ***value***
+Network listening port (default: 30303)
+
+- --rpc
+Enable the HTTP-RPC server (deprecated and will be removed June 2021, use --http)
+
+- --http
+Enable the HTTP-RPC server
+
+- --bootnodes ***value***
+Comma separated enode URLs for P2P discovery bootstrap
+
+- --ipcdisable
+Disable the IPC-RPC server
