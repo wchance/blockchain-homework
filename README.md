@@ -77,7 +77,7 @@ Commands differ based on OS; choose your system below.
 
 </details>
 
-## Geth Flags Used
+## Geth Flags explained
 - --datadir ***value***
 Data directory for the databases and keystore
 
@@ -104,3 +104,10 @@ Comma separated enode URLs for P2P discovery bootstrap
 
 - --ipcdisable
 Disable the IPC-RPC server
+
+### - Explain the configuration of the network
+* We used 180 seconds between each block
+* chainID 127
+* Ports 30303 and 30304
+
+### - Explain how to connect MyCrypto to your network and demonstrate (via screenshots and steps) and send a transaction.
