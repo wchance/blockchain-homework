@@ -110,10 +110,13 @@ Disable the IPC-RPC server
 ### How to connect MyCrypto to your network
 - Step 1: In MyCrypto click in Change Network
    <img src="Screenshots/1_change_network.PNG" width = 600>
+---
 - Step 2: Then click on + Add Custom Node
    <img src="Screenshots/2_custom_node.PNG" width = 600>
+---
 - Step 3: Add Node Name, Select Network, Define Network Name, Select currency, define URL
    <img src="Screenshots/3_add_custom_node.PNG" width = 600>
+---
    
 * Node Name: laborforce
 * Network: Custom
@@ -121,3 +124,6 @@ Disable the IPC-RPC server
 * Currency ETH
 * Chain ID 127
 * URL http://127.0.0.1:3334
+
+### Show a sample transaction
+
