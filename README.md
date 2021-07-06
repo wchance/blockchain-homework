@@ -3,7 +3,6 @@
 ### Enviroment setup
 - Step 1: Make dir for new blockchain (e.g. *mkdir blockchain*)
 - Step 2: Download latest Geth & Tools release for your Operating System and unzip .exe file into step 1 directory
-- Step 3: 
 
 ## Start Node1
 * Start the first node by opening a new terminal and running the following command:
@@ -39,13 +38,13 @@ Commands differ based on OS; choose your system below.
 * Start node two by opening a second new terminal and running the following command: 
 
   ```sh
-  ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --port 30304 --http --bootnodes "SEALER_ONE_ENODE_ADDRESS"  --ipcdisable --allow-insecure-unlock --mine --miner.threads 1
+  ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --port 30304 --http --http.port 3334 --bootnodes "SEALER_ONE_ENODE_ADDRESS"  --ipcdisable --allow-insecure-unlock --mine --miner.threads 1
   ```
 
 * For example:
 
   ```sh
-  ./geth --datadir node2 --unlock "B1F8B855dD47239Ef8eC38304753E9Bc75DB2212" --port 30304 --http --bootnodes "enode://f018ba3233571c075037548d5d2946b47f31dff2f6173acf172e1312c914bd572c0c2dcbc21ce83dc413a4e7721d9342592256804b9b9656c0343f2b41061a6a@127.0.0.1:30303"  --ipcdisable --allow-insecure-unlock --mine --miner.threads 1
+  ./geth --datadir node2 --unlock "B1F8B855dD47239Ef8eC38304753E9Bc75DB2212" --port 30304 --http --http.port 3334 --bootnodes "enode://f018ba3233571c075037548d5d2946b47f31dff2f6173acf172e1312c914bd572c0c2dcbc21ce83dc413a4e7721d9342592256804b9b9656c0343f2b41061a6a@127.0.0.1:30303"  --ipcdisable --allow-insecure-unlock --mine --miner.threads 1
   ```
 
 * **Important**: Type your password and hit enter - _even if you don't see a prompt!_
@@ -94,6 +93,9 @@ Enable the HTTP-RPC server (deprecated and will be removed June 2021, use --http
 
 - --http
 Enable the HTTP-RPC server
+
+- --http.port ***value***
+Define port to use for HTTP-RPC server (default 8545)
 
 - --bootnodes ***value***
 Comma separated enode URLs for P2P discovery bootstrap
