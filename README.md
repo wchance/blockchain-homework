@@ -25,7 +25,7 @@
 * Copy the resulting enode address from the terminal:
 
 
-   <img src="Images/enode-address.png" width = 600>
+   <img src="Screenshots/enode-address.png" width = 600>
 
 ---
 
@@ -105,10 +105,13 @@ Disable the IPC-RPC server
 * Block time is 180 seconds
 * chainID used is 127
 * Node1 listens on TCP port 30303 and Node2 listens on port TCP 30304
+* Set RCP port to 3334
 
-### How to connect MyCrypto to your network and demonstrate (via screenshots and steps) and send a transaction.
+### How to connect MyCrypto to your network
 - Step 1: In MyCrypto click in Change Network
+   <img src="Screenshots/1_change_network.PNG" width = 600>
 - Step 2: Then click on + Add Custom Node
-- Step 3: Add Node Name
-- Step 4: Select Custom in Network Dropdown
-- Step 5: Define Network Name, Currency ETH, Chain ID 127, and URL http://127.0.0.1:8545
+   <img src="Screenshots/2_custom_node.PNG" width = 600>
+- Step 3: Add Node Name, select customer in network dropdown
+   <img src="Screenshots/3_add_custom_node.PNG" width = 600>
+  Define Network Name: laborforce, Currency ETH, Chain ID 127, and URL http://127.0.0.1:3334
