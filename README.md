@@ -126,4 +126,8 @@ Disable the IPC-RPC server
 * URL http://127.0.0.1:3334
 
 ### Show a sample transaction
+This is a transaction from Node1 to Node2
+
+   <img src="Screenshots/txstatus.PNG" width = 600>
+---
 
