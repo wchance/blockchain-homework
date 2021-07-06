@@ -112,6 +112,12 @@ Disable the IPC-RPC server
    <img src="Screenshots/1_change_network.PNG" width = 600>
 - Step 2: Then click on + Add Custom Node
    <img src="Screenshots/2_custom_node.PNG" width = 600>
-- Step 3: Add Node Name, select customer in network dropdown
+- Step 3: Add Node Name, Select Network, Define Network Name, Select currency, define URL
    <img src="Screenshots/3_add_custom_node.PNG" width = 600>
-  Define Network Name: laborforce, Currency ETH, Chain ID 127, and URL http://127.0.0.1:3334
+   
+* Node Name: laborforce
+* Network: Custom
+* Define Network Name: laborforce 
+* Currency ETH
+* Chain ID 127
+* URL http://127.0.0.1:3334
