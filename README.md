@@ -74,33 +74,42 @@ Commands differ based on OS; choose your system below.
 
 ## Geth Flags explained
 - --datadir ***value***
+
 Data directory for the databases and keystore
 
 - --unlock ***value***
+
 Comma separated list of accounts to unlock
 
 - --mine
 Enable mining
 
 - --miner.threads ***value***
+
 Number of CPU threads to use for mining (default: 0)
 
 - --port ***value***
+
 Network listening port (default: 30303)
 
 - --rpc
+
 Enable the HTTP-RPC server (deprecated and will be removed June 2021, use --http)
 
 - --http
+
 Enable the HTTP-RPC server
 
 - --http.port ***value***
+
 Define port to use for HTTP-RPC server (default 8545)
 
 - --bootnodes ***value***
+
 Comma separated enode URLs for P2P discovery bootstrap
 
 - --ipcdisable
+
 Disable the IPC-RPC server
 
 ### Network Confirmation Explained
